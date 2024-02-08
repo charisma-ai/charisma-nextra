@@ -4,7 +4,7 @@
   "commit": false,
   "fixed": [["nextra", "nextra-theme-docs"]],
   "linked": [],
-  "access": "public",
+  "access": "restricted",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {

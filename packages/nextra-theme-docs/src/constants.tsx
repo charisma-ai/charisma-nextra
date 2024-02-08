@@ -200,7 +200,7 @@ export const DEFAULT_THEME: DocsThemeConfig = {
   },
   darkMode: true,
   direction: 'ltr',
-  docsRepositoryBase: 'https://github.com/shuding/nextra',
+  docsRepositoryBase: 'https://github.com/charisma-ai/charisma-nextra',
   editLink: {
     component: function EditLink({ className, filePath, children }) {
       const editUrl = useGitEditUrl(filePath)
