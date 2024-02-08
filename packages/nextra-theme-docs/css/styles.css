@@ -1,12 +1,12 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import 'nextra/styles/variables.css';
-@import 'nextra/styles/code-block.css';
-@import 'nextra/styles/subheading-anchor.css';
-@import 'nextra/styles/scrollbar.css';
-@import 'nextra/styles/steps.css';
-@import 'nextra/styles/cards.css';
+@import '@charisma-ai/nextra/styles/variables.css';
+@import '@charisma-ai/nextra/styles/code-block.css';
+@import '@charisma-ai/nextra/styles/subheading-anchor.css';
+@import '@charisma-ai/nextra/styles/scrollbar.css';
+@import '@charisma-ai/nextra/styles/steps.css';
+@import '@charisma-ai/nextra/styles/cards.css';
 @import './hamburger.css';
 @import './typesetting-article.css';
 
@@ -120,9 +120,9 @@ article details > summary {
   }
 
   .nextra-nav-container-blur {
-        /* @apply nx-backdrop-blur-md nx-bg-white/[.85] dark:!nx-bg-dark/80; */
-  @apply nx-backdrop-blur-md nx-bg-white/[.85] dark:!nx-bg-[rgb(23,27,31)];
-  background-color: rgba(229, 231, 235, 0.85);
+    /* @apply nx-backdrop-blur-md nx-bg-white/[.85] dark:!nx-bg-dark/80; */
+    @apply nx-backdrop-blur-md nx-bg-white/[.85] dark:!nx-bg-[rgb(23,27,31)];
+    background-color: rgba(229, 231, 235, 0.85);
   }
 }
 
