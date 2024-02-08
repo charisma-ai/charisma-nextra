@@ -197,7 +197,7 @@ export async function compileMdx(
       format,
       outputFormat,
       providerImportSource: isFileOutsideCWD
-        ? require.resolve('@charisma-ai/nextra').replace(/index\.js$/, 'mdx.js') // fixes Package subpath './mdx' is not defined by "exports"
+        ? require.resolve('nextra').replace(/index\.js$/, 'mdx.js') // fixes Package subpath './mdx' is not defined by "exports"
         : '@charisma-ai/nextra/mdx',
       remarkPlugins: [
         ...(remarkPlugins || []),
