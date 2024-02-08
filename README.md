@@ -47,7 +47,7 @@ cd examples/docs
 pnpm dev
 ```
 
-Any change to example/docs will be re-rendered instantly.
+Any change to example/docs will be re-rendered instantly,
 
 If you update the core or theme packages, a rebuild is required. Or you can use
 the watch mode for both nextra and the theme in separated terminals.
