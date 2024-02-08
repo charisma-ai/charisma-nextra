@@ -54,7 +54,7 @@ function NavbarMenu({
           leaveFrom="nx-opacity-100"
           leaveTo="nx-opacity-0"
         >
-          <Menu.Items className="nx-absolute nx-right-0 nx-z-20 nx-mt-1 nx-max-h-64 nx-min-w-full nx-overflow-auto nx-rounded-md nx-ring-1 nx-ring-black/5 nx-bg-white nx-py-1 nx-text-sm nx-shadow-lg dark:nx-ring-white/20 dark:nx-bg-neutral-800">
+          <Menu.Items className="nx-absolute nx-right-0 nx-z-20 nx-mt-1 nx-max-h-64 nx-min-w-full nx-overflow-auto nx-rounded-md nx-ring-1 nx-ring-black/5 nx-bg-white nx-py-1 nx-text-sm nx-shadow-lg dark:nx-ring-white/20 dark:nx-bg-[rgb(32_38_44)]">
             {Object.entries(items || {}).map(([key, item]) => (
               <Menu.Item key={key}>
                 <Anchor
@@ -89,7 +89,7 @@ export function Navbar({ flatDirectories, items }: NavBarProps): ReactElement {
         className={cn(
           'nextra-nav-container-blur',
           'nx-pointer-events-none nx-absolute nx-z-[-1] nx-h-full nx-w-full nx-bg-white dark:nx-bg-dark',
-          'nx-shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] dark:nx-shadow-[0_-1px_0_rgba(255,255,255,.1)_inset]',
+          'nx-shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] dark:nx-shadow-[0_-1px_0_rgb(23,27,31)_inset]',
           'contrast-more:nx-shadow-[0_0_0_1px_#000] contrast-more:dark:nx-shadow-[0_0_0_1px_#fff]'
         )}
       />
@@ -149,7 +149,9 @@ export function Navbar({ flatDirectories, items }: NavBarProps): ReactElement {
               className={cn(
                 classes.link,
                 'nx-relative -nx-ml-2 nx-hidden nx-whitespace-nowrap nx-p-2 md:nx-inline-block',
-                !isActive || page.newWindow ? classes.inactive : classes.active
+                !isActive || page.route !== '/docs'
+                  ? classes.inactive
+                  : classes.active
               )}
               newWindow={page.newWindow}
               aria-current={!page.newWindow && isActive}

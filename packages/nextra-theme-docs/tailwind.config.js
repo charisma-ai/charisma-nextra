@@ -44,7 +44,7 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       black: '#000',
-      white: '#fff',
+      white: 'rgb(249,249,249)',
       gray: colors.gray,
       slate: colors.slate,
       neutral: colors.neutral,
@@ -59,7 +59,7 @@ module.exports = {
         300: makePrimaryColor(77),
         400: makePrimaryColor(66),
         500: makePrimaryColor(50),
-        600: makePrimaryColor(45),
+        600: makePrimaryColor(33),
         700: makePrimaryColor(39),
         750: makePrimaryColor(35),
         800: makePrimaryColor(32),
@@ -68,7 +68,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        dark: '#111'
+        dark: 'rgb(32, 38, 44)'
       }
     }
   },

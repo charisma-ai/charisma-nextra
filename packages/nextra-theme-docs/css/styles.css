@@ -118,8 +118,11 @@ article details > summary {
   .nextra-search ul {
     @apply nx-backdrop-blur-lg nx-bg-white/70 dark:nx-bg-dark/80;
   }
+
   .nextra-nav-container-blur {
-    @apply nx-backdrop-blur-md nx-bg-white/[.85] dark:!nx-bg-dark/80;
+        /* @apply nx-backdrop-blur-md nx-bg-white/[.85] dark:!nx-bg-dark/80; */
+  @apply nx-backdrop-blur-md nx-bg-white/[.85] dark:!nx-bg-[rgb(23,27,31)];
+  background-color: rgba(229, 231, 235, 0.85);
   }
 }
 
