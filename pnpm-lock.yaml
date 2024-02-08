@@ -83,6 +83,12 @@ importers:
 
   docs:
     dependencies:
+      '@charisma-ai/nextra':
+        specifier: workspace:*
+        version: link:../packages/nextra
+      '@charisma-ai/nextra-theme-docs':
+        specifier: workspace:*
+        version: link:../packages/nextra-theme-docs
       '@vercel/og':
         specifier: ^0.5.0
         version: 0.5.0
@@ -95,12 +101,6 @@ importers:
       next:
         specifier: 13.5.6
         version: 13.5.6(react-dom@18.2.0)(react@18.2.0)
-      nextra:
-        specifier: workspace:*
-        version: link:../packages/nextra
-      nextra-theme-docs:
-        specifier: workspace:*
-        version: link:../packages/nextra-theme-docs
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -302,6 +302,9 @@ importers:
         specifier: ^3.22.3
         version: 3.22.3
     devDependencies:
+      '@charisma-ai/nextra':
+        specifier: workspace:*
+        version: link:../nextra
       '@tailwindcss/nesting':
         specifier: ^0.0.0-insiders.565cd3e
         version: 0.0.0-insiders.565cd3e(postcss@8.4.31)
@@ -332,9 +335,6 @@ importers:
       next:
         specifier: 13.5.6
         version: 13.5.6(react-dom@18.2.0)(react@18.2.0)
-      nextra:
-        specifier: workspace:*
-        version: link:../nextra
       postcss:
         specifier: ^8.4.31
         version: 8.4.31
