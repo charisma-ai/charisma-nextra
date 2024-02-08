@@ -1,14 +1,14 @@
+import type { NextraThemeLayoutProps, PageOpts } from '@charisma-ai/nextra'
 import { useRouter } from 'next/router'
-import type { NextraThemeLayoutProps, PageOpts } from 'nextra'
 import type { ReactElement, ReactNode } from 'react'
 import { useMemo } from 'react'
 import 'focus-visible'
+import { useFSRoute, useMounted } from '@charisma-ai/nextra/hooks'
+import { MDXProvider } from '@charisma-ai/nextra/mdx'
 import cn from 'clsx'
-import { useFSRoute, useMounted } from 'nextra/hooks'
-import { MDXProvider } from 'nextra/mdx'
 import './polyfill'
-import type { PageTheme } from 'nextra/normalize-pages'
-import { normalizePages } from 'nextra/normalize-pages'
+import type { PageTheme } from '@charisma-ai/nextra/normalize-pages'
+import { normalizePages } from '@charisma-ai/nextra/normalize-pages'
 import {
   Banner,
   Breadcrumb,
@@ -252,7 +252,7 @@ export default function Layout({
 }
 
 export { useConfig, PartialDocsThemeConfig as DocsThemeConfig }
-export { useMDXComponents } from 'nextra/mdx'
+export { useMDXComponents } from '@charisma-ai/nextra/mdx'
 export {
   Callout,
   Steps,
@@ -261,7 +261,7 @@ export {
   Cards,
   Card,
   FileTree
-} from 'nextra/components'
+} from '@charisma-ai/nextra/components'
 export { useTheme } from 'next-themes'
 export { Link } from './mdx-components'
 export {

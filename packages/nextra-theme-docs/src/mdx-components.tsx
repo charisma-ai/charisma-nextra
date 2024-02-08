@@ -1,6 +1,6 @@
+import { Code, Pre, Table, Td, Th, Tr } from '@charisma-ai/nextra/components'
+import type { Components } from '@charisma-ai/nextra/mdx'
 import cn from 'clsx'
-import { Code, Pre, Table, Td, Th, Tr } from 'nextra/components'
-import type { Components } from 'nextra/mdx'
 import type { ComponentProps, ReactElement, ReactNode } from 'react'
 import { Children, cloneElement, useEffect, useRef, useState } from 'react'
 import { Anchor, Collapse } from './components'

@@ -1,6 +1,6 @@
+import type { FrontMatter, PageMapItem, PageOpts } from '@charisma-ai/nextra'
+import { metaSchema } from '@charisma-ai/nextra/normalize-pages'
 import { ThemeProvider } from 'next-themes'
-import type { FrontMatter, PageMapItem, PageOpts } from 'nextra'
-import { metaSchema } from 'nextra/normalize-pages'
 import type { ReactElement, ReactNode } from 'react'
 import { createContext, useContext, useState } from 'react'
 import type { ZodError } from 'zod'

@@ -1,5 +1,5 @@
+import type { Item as NormalItem } from '@charisma-ai/nextra/normalize-pages'
 import { matchSorter } from 'match-sorter'
-import type { Item as NormalItem } from 'nextra/normalize-pages'
 import type { ReactElement } from 'react'
 import { useMemo, useState } from 'react'
 import type { SearchResult } from '../types'

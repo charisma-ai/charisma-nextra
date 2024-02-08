@@ -1,6 +1,6 @@
+import { ArrowRightIcon } from '@charisma-ai/nextra/icons'
+import type { Item } from '@charisma-ai/nextra/normalize-pages'
 import cn from 'clsx'
-import { ArrowRightIcon } from 'nextra/icons'
-import type { Item } from 'nextra/normalize-pages'
 import type { ReactElement } from 'react'
 import { Fragment } from 'react'
 import { Anchor } from './anchor'

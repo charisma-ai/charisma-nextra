@@ -1,5 +1,5 @@
+import { XIcon } from '@charisma-ai/nextra/icons'
 import cn from 'clsx'
-import { XIcon } from 'nextra/icons'
 import type { ReactElement } from 'react'
 import { useConfig } from '../contexts'
 import { renderComponent } from '../utils'

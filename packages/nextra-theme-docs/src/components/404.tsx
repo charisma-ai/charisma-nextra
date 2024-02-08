@@ -1,5 +1,5 @@
+import { useMounted } from '@charisma-ai/nextra/hooks'
 import { useRouter } from 'next/router'
-import { useMounted } from 'nextra/hooks'
 import type { ReactElement } from 'react'
 import { useConfig } from '../contexts'
 import { getGitIssueUrl, renderComponent } from '../utils'

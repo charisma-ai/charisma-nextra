@@ -1,8 +1,12 @@
+import { useFSRoute } from '@charisma-ai/nextra/hooks'
+import { ArrowRightIcon, MenuIcon } from '@charisma-ai/nextra/icons'
+import type {
+  Item,
+  MenuItem,
+  PageItem
+} from '@charisma-ai/nextra/normalize-pages'
 import { Menu, Transition } from '@headlessui/react'
 import cn from 'clsx'
-import { useFSRoute } from 'nextra/hooks'
-import { ArrowRightIcon, MenuIcon } from 'nextra/icons'
-import type { Item, MenuItem, PageItem } from 'nextra/normalize-pages'
 import type { ReactElement, ReactNode } from 'react'
 import { useConfig, useMenu } from '../contexts'
 import { renderComponent } from '../utils'

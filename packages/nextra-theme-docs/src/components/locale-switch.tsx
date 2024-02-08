@@ -1,6 +1,6 @@
+import { GlobeIcon } from '@charisma-ai/nextra/icons'
 import { addBasePath } from 'next/dist/client/add-base-path'
 import { useRouter } from 'next/router'
-import { GlobeIcon } from 'nextra/icons'
 import type { ReactElement } from 'react'
 import { useConfig } from '../contexts'
 import { Select } from './select'
