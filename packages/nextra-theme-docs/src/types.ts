@@ -1,5 +1,5 @@
 /* eslint typescript-sort-keys/interface: error */
-import type { PageOpts } from 'nextra'
+import type { PageOpts } from '@charisma-ai/nextra'
 import type { ReactNode } from 'react'
 import type { DocsThemeConfig } from './constants'
 
