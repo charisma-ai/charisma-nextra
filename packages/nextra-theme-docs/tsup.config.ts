@@ -5,6 +5,6 @@ export default defineConfig({
   entry: ['src/index.tsx'],
   format: 'esm',
   dts: true,
-  external: ['nextra'],
+  external: ['@charisma-ai/nextra'],
   outExtension: () => ({ js: '.js' })
 })
