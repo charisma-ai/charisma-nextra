@@ -1,6 +1,6 @@
 {
   "name": "@charisma-ai/nextra",
-  "version": "2.13.4",
+  "version": "2.13.5",
   "description": "Next.js and MDX based site generator.",
   "repository": "https://github.com/charisma-ai/charisma-nextra",
   "license": "MIT",

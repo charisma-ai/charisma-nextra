@@ -91,7 +91,7 @@ const nextra = (themeOrNextraConfig, themeConfig) =>
             use: [
               options.defaultLoaders.babel,
               {
-                loader: 'nextra/loader',
+                loader: '@charisma-ai/nextra/loader',
                 options: nextraLoaderOptions
               }
             ]
@@ -103,7 +103,7 @@ const nextra = (themeOrNextraConfig, themeConfig) =>
             use: [
               options.defaultLoaders.babel,
               {
-                loader: 'nextra/loader',
+                loader: '@charisma-ai/nextra/loader',
                 options: {
                   ...nextraLoaderOptions,
                   isPageImport: true
@@ -118,7 +118,7 @@ const nextra = (themeOrNextraConfig, themeConfig) =>
             use: [
               options.defaultLoaders.babel,
               {
-                loader: 'nextra/loader',
+                loader: '@charisma-ai/nextra/loader',
                 options: {
                   isMetaImport: true
                 }
