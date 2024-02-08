@@ -197,15 +197,15 @@ export async function compileMdx(
       format,
       outputFormat,
       providerImportSource: isFileOutsideCWD
-        ? require.resolve('nextra').replace(/index\.js$/, 'mdx.js') // fixes Package subpath './mdx' is not defined by "exports"
-        : 'nextra/mdx',
+        ? require.resolve('@charisma-ai/nextra').replace(/index\.js$/, 'mdx.js') // fixes Package subpath './mdx' is not defined by "exports"
+        : '@charisma-ai/nextra/mdx',
       remarkPlugins: [
         ...(remarkPlugins || []),
         remarkMermaid, // should be before remarkRemoveImports because contains `import { Mermaid } from ...`
         [
           remarkNpm2Yarn, // should be before remarkRemoveImports because contains `import { Tabs as $Tabs, Tab as $Tab } from ...`
           {
-            packageName: 'nextra/components',
+            packageName: '@charisma-ai/nextra/components',
             tabNamesProp: 'items',
             storageKey: 'selectedPackageManager'
           }

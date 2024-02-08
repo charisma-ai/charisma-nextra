@@ -7,7 +7,7 @@ export async function buildDynamicMDX(
   if (compileMdxOptions && 'remarkLinkRewriteOptions' in compileMdxOptions) {
     throw new Error(`\`remarkLinkRewriteOptions\` was removed. For overriding internal links use \`remarkLinkRewrite\` instead.
 
-import { remarkLinkRewrite } from 'nextra/mdx-plugins'
+import { remarkLinkRewrite } from '@charisma-ai/nextra/mdx-plugins'
 
 // ...
 

@@ -305,7 +305,7 @@ ${
 
   const lastIndexOfFooter = finalResult.lastIndexOf(FOOTER_TO_REMOVE)
 
-  const rawJs = `import { setupNextraPage } from 'nextra/setup-page'
+  const rawJs = `import { setupNextraPage } from '@charisma-ai/nextra/setup-page'
 ${HAS_UNDERSCORE_APP_MDX_FILE ? '' : pageImports}
 ${
   // Remove the last match of `export default MDXContent;` because it can be existed in the raw MDX file
