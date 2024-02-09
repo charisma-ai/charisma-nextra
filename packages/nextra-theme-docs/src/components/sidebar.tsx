@@ -472,9 +472,9 @@ export function Sidebar({
             className={cn(
               'nx-sticky nx-bottom-0',
               'nx-bg-white dark:nx-bg-dark', // when banner is showed, sidebar links can be behind menu, set bg color as body bg color
-              'nx-mx-4 nx-py-4 nx-shadow-[0_-12px_16px_#fff]',
+              'nx-mx-4 nx-py-4 nx-shadow-[0_-12px_16px_rgb(249_249_249)]',
               'nx-flex nx-items-center nx-gap-2',
-              'dark:nx-border-neutral-800 dark:nx-shadow-[0_-12px_16px_#111]',
+              'dark:nx-border-neutral-800 dark:nx-shadow-[0_-12px_16px_rgb(32_38_44)]',
               'contrast-more:nx-border-neutral-400 contrast-more:nx-shadow-none contrast-more:dark:nx-shadow-none',
               showSidebar
                 ? cn(hasI18n && 'nx-justify-end', 'nx-border-t')
