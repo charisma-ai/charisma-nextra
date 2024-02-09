@@ -19,7 +19,11 @@ export const DEFAULT_CONFIG: Omit<NextraConfig, 'theme'> = {
   codeHighlight: true
 }
 
-export const OFFICIAL_THEMES = ['nextra-theme-docs', 'nextra-theme-blog']
+export const OFFICIAL_THEMES = [
+  '@charisma-ai/nextra-theme-docs',
+  'nextra-theme-docs',
+  'nextra-theme-blog'
+]
 
 export const META_FILENAME = '_meta.json'
 export const DYNAMIC_META_FILENAME = '_meta.js'
